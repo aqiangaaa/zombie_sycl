@@ -70,3 +70,31 @@ if(ZOMBIE_BUILD_BINDINGS)
     add_subdirectory(deps/nanobind)
     add_subdirectory(python)
 endif()
+
+add_executable(hello_sycl sycl/hello_sycl.cpp)
+target_compile_options(hello_sycl PRIVATE -fsycl)
+target_link_options(hello_sycl PRIVATE -fsycl)
+
+add_executable(zombie_sycl_smoke sycl/zombie_sycl_smoke.cpp)
+target_link_libraries(zombie_sycl_smoke PRIVATE zombie)
+target_compile_options(zombie_sycl_smoke PRIVATE -fsycl)
+target_link_options(zombie_sycl_smoke PRIVATE -fsycl)
+
+add_executable(walkstate_lite_sycl sycl/walkstate_lite_sycl.cpp)
+target_compile_options(walkstate_lite_sycl PRIVATE -fsycl)
+target_link_options(walkstate_lite_sycl PRIVATE -fsycl)
+
+add_executable(walkstate_bridge_sycl sycl/walkstate_bridge_sycl.cpp)
+target_link_libraries(walkstate_bridge_sycl PRIVATE zombie)
+target_compile_options(walkstate_bridge_sycl PRIVATE -fsycl)
+target_link_options(walkstate_bridge_sycl PRIVATE -fsycl)
+
+add_executable(walktask_lite_sycl sycl/walktask_lite_sycl.cpp)
+target_link_libraries(walktask_lite_sycl PRIVATE zombie)
+target_compile_options(walktask_lite_sycl PRIVATE -fsycl)
+target_link_options(walktask_lite_sycl PRIVATE -fsycl)
+
+add_executable(walktask_phased_sycl sycl/walktask_phased_sycl.cpp)
+target_link_libraries(walktask_phased_sycl PRIVATE zombie)
+target_compile_options(walktask_phased_sycl PRIVATE -fsycl)
+target_link_options(walktask_phased_sycl PRIVATE -fsycl)

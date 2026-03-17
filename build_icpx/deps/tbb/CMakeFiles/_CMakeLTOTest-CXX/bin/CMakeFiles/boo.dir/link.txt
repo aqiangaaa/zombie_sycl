@@ -1,0 +1,1 @@
+/home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 

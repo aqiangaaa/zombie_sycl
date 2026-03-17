@@ -1,0 +1,2 @@
+"/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+"/usr/bin/llvm-ranlib" libfoo.a

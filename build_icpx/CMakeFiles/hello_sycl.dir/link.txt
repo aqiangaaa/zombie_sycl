@@ -1,0 +1,1 @@
+/home/tools/intel/oneapi/compiler/2025.2/bin/icpx -O3 -DNDEBUG -fsycl CMakeFiles/hello_sycl.dir/sycl/hello_sycl.cpp.o -o hello_sycl 

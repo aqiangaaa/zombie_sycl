@@ -1,0 +1,1 @@
+/home/tools/intel/oneapi/compiler/2025.2/bin/icpx -O3 -DNDEBUG CMakeFiles/demo.dir/demo.cpp.o -o demo  -Wl,-rpath,/home/powerzhang/zombie/build_icpx/intelllvm_2025.2_cxx11_64_release ../intelllvm_2025.2_cxx11_64_release/libtbb.so.12.18 

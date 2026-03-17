@@ -1,0 +1,1935 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.8.0-94-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/tools/intel/oneapi/compiler/2025.2/bin/icx 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is IntelLLVM, found in:
+        /home/powerzhang/zombie/build_icpx/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/tools/intel/oneapi/compiler/2025.2/bin/icpx 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is IntelLLVM, found in:
+        /home/powerzhang/zombie/build_icpx/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6"
+      binary: "/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6c72/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b6c72.dir/build.make CMakeFiles/cmTC_b6c72.dir/build
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6'
+        Building C object CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -v -MD -MT CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Intel(R) oneAPI DPC++/C++ Compiler 2025.2.1 (2025.2.0.20250806)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler
+        Configuration file: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../icx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /home/tools/cuda/cuda-12.2, version 12.2
+         (in-process)
+         "/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -faltmathlib=SVMLAltMathLibrary -mframe-pointer=none -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast-honor-pragmas -fno-rounding-math -complex-range=promoted -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6 -v -fcoverage-compilation-dir=/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6 -fclang-abi-compat=17 -resource-dir /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21 -dependency-file CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -sys-header-deps -I/home/tools/intel/oneapi/umf/0.11/include -I/home/tools/intel/oneapi/mkl/2025.2/include -I/home/tools/intel/oneapi/dnnl/2025.2/include -I/home/tools/intel/oneapi/dev-utilities/2025.2/include -I/home/tools/intel/oneapi/ccl/2021.16/include -c-isystem /home/tools/intel/oneapi/umf/0.11/include -c-isystem /home/tools/intel/oneapi/tbb/2022.2/env/../include -c-isystem /home/tools/intel/oneapi/pti/0.13/include -c-isystem /home/tools/intel/oneapi/mpi/2021.16/include -c-isystem /home/tools/intel/oneapi/mkl/2025.2/include -c-isystem /home/tools/intel/oneapi/ippcp/2025.2/include -c-isystem /home/tools/intel/oneapi/ipp/2022.2/include -cxx-isystem /home/tools/intel/oneapi/umf/0.11/include -cxx-isystem /home/tools/intel/oneapi/tbb/2022.2/env/../include -cxx-isystem /home/tools/intel/oneapi/pti/0.13/include -cxx-isystem /home/tools/intel/oneapi/mpi/2021.16/include -cxx-isystem /home/tools/intel/oneapi/mkl/2025.2/include -cxx-isystem /home/tools/intel/oneapi/ippcp/2025.2/include -cxx-isystem /home/tools/intel/oneapi/ipp/2022.2/include -cxx-isystem /home/tools/intel/oneapi/dpl/2022.9/include -cxx-isystem /home/tools/intel/oneapi/dpcpp-ct/2025.2/include -cxx-isystem /home/tools/intel/oneapi/dal/2025.8/include -cxx-isystem /home/tools/intel/oneapi/dal/2025.8/include/dal -internal-isystem /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include -internal-isystem /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -fintel-libimf-allowed -o CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/home/tools/intel/oneapi/umf/0.11/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/home/tools/intel/oneapi/mkl/2025.2/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/tools/intel/oneapi/dnnl/2025.2/include
+         /home/tools/intel/oneapi/dev-utilities/2025.2/include
+         /home/tools/intel/oneapi/ccl/2021.16/include
+         /home/tools/intel/oneapi/umf/0.11/include
+         /home/tools/intel/oneapi/tbb/2022.2/env/../include
+         /home/tools/intel/oneapi/pti/0.13/include
+         /home/tools/intel/oneapi/mpi/2021.16/include
+         /home/tools/intel/oneapi/mkl/2025.2/include
+         /home/tools/intel/oneapi/ippcp/2025.2/include
+         /home/tools/intel/oneapi/ipp/2022.2/include
+         /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include
+         /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_b6c72
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6c72.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx  -v CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -o cmTC_b6c72 
+        Intel(R) oneAPI DPC++/C++ Compiler 2025.2.1 (2025.2.0.20250806)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler
+        Configuration file: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../icx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /home/tools/cuda/cuda-12.2, version 12.2
+         "/usr/bin/ld" -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b6c72 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/tools/intel/oneapi/tcm/1.4/lib -L/home/tools/intel/oneapi/umf/0.11/lib -L/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8 -L/home/tools/intel/oneapi/pti/0.13/lib -L/home/tools/intel/oneapi/mpi/2021.16/lib -L/home/tools/intel/oneapi/mkl/2025.2/lib -L/home/tools/intel/oneapi/ippcp/2025.2/lib/ -L/home/tools/intel/oneapi/ipp/2022.2/lib -L/home/tools/intel/oneapi/dnnl/2025.2/lib -L/home/tools/intel/oneapi/dal/2025.8/lib -L/home/tools/intel/oneapi/compiler/2025.2/lib -L/home/tools/intel/oneapi/ccl/2021.16/lib/ CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/tools/intel/oneapi/dnnl/2025.2/include]
+          add: [/home/tools/intel/oneapi/dev-utilities/2025.2/include]
+          add: [/home/tools/intel/oneapi/ccl/2021.16/include]
+          add: [/home/tools/intel/oneapi/umf/0.11/include]
+          add: [/home/tools/intel/oneapi/tbb/2022.2/env/../include]
+          add: [/home/tools/intel/oneapi/pti/0.13/include]
+          add: [/home/tools/intel/oneapi/mpi/2021.16/include]
+          add: [/home/tools/intel/oneapi/mkl/2025.2/include]
+          add: [/home/tools/intel/oneapi/ippcp/2025.2/include]
+          add: [/home/tools/intel/oneapi/ipp/2022.2/include]
+          add: [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include]
+          add: [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/tools/intel/oneapi/dnnl/2025.2/include] ==> [/home/tools/intel/oneapi/dnnl/2025.2/include]
+        collapse include dir [/home/tools/intel/oneapi/dev-utilities/2025.2/include] ==> [/home/tools/intel/oneapi/dev-utilities/2025.2/include]
+        collapse include dir [/home/tools/intel/oneapi/ccl/2021.16/include] ==> [/home/tools/intel/oneapi/ccl/2021.16/include]
+        collapse include dir [/home/tools/intel/oneapi/umf/0.11/include] ==> [/home/tools/intel/oneapi/umf/0.11/include]
+        collapse include dir [/home/tools/intel/oneapi/tbb/2022.2/env/../include] ==> [/home/tools/intel/oneapi/tbb/2022.2/include]
+        collapse include dir [/home/tools/intel/oneapi/pti/0.13/include] ==> [/home/tools/intel/oneapi/pti/0.13/include]
+        collapse include dir [/home/tools/intel/oneapi/mpi/2021.16/include] ==> [/home/tools/intel/oneapi/mpi/2021.16/include]
+        collapse include dir [/home/tools/intel/oneapi/mkl/2025.2/include] ==> [/home/tools/intel/oneapi/mkl/2025.2/include]
+        collapse include dir [/home/tools/intel/oneapi/ippcp/2025.2/include] ==> [/home/tools/intel/oneapi/ippcp/2025.2/include]
+        collapse include dir [/home/tools/intel/oneapi/ipp/2022.2/include] ==> [/home/tools/intel/oneapi/ipp/2022.2/include]
+        collapse include dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include] ==> [/home/tools/intel/oneapi/compiler/2025.2/opt/compiler/include]
+        collapse include dir [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/tools/intel/oneapi/dnnl/2025.2/include;/home/tools/intel/oneapi/dev-utilities/2025.2/include;/home/tools/intel/oneapi/ccl/2021.16/include;/home/tools/intel/oneapi/umf/0.11/include;/home/tools/intel/oneapi/tbb/2022.2/include;/home/tools/intel/oneapi/pti/0.13/include;/home/tools/intel/oneapi/mpi/2021.16/include;/home/tools/intel/oneapi/mkl/2025.2/include;/home/tools/intel/oneapi/ippcp/2025.2/include;/home/tools/intel/oneapi/ipp/2022.2/include;/home/tools/intel/oneapi/compiler/2025.2/opt/compiler/include;/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6c72/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b6c72.dir/build.make CMakeFiles/cmTC_b6c72.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6']
+        ignore line: [Building C object CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/tools/intel/oneapi/compiler/2025.2/bin/icx   -v -MD -MT CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2025.2.1 (2025.2.0.20250806)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler]
+        ignore line: [Configuration file: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../icx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /home/tools/cuda/cuda-12.2  version 12.2]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -faltmathlib=SVMLAltMathLibrary -mframe-pointer=none -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast-honor-pragmas -fno-rounding-math -complex-range=promoted -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6 -v -fcoverage-compilation-dir=/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-Y0hJh6 -fclang-abi-compat=17 -resource-dir /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21 -dependency-file CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -sys-header-deps -I/home/tools/intel/oneapi/umf/0.11/include -I/home/tools/intel/oneapi/mkl/2025.2/include -I/home/tools/intel/oneapi/dnnl/2025.2/include -I/home/tools/intel/oneapi/dev-utilities/2025.2/include -I/home/tools/intel/oneapi/ccl/2021.16/include -c-isystem /home/tools/intel/oneapi/umf/0.11/include -c-isystem /home/tools/intel/oneapi/tbb/2022.2/env/../include -c-isystem /home/tools/intel/oneapi/pti/0.13/include -c-isystem /home/tools/intel/oneapi/mpi/2021.16/include -c-isystem /home/tools/intel/oneapi/mkl/2025.2/include -c-isystem /home/tools/intel/oneapi/ippcp/2025.2/include -c-isystem /home/tools/intel/oneapi/ipp/2022.2/include -cxx-isystem /home/tools/intel/oneapi/umf/0.11/include -cxx-isystem /home/tools/intel/oneapi/tbb/2022.2/env/../include -cxx-isystem /home/tools/intel/oneapi/pti/0.13/include -cxx-isystem /home/tools/intel/oneapi/mpi/2021.16/include -cxx-isystem /home/tools/intel/oneapi/mkl/2025.2/include -cxx-isystem /home/tools/intel/oneapi/ippcp/2025.2/include -cxx-isystem /home/tools/intel/oneapi/ipp/2022.2/include -cxx-isystem /home/tools/intel/oneapi/dpl/2022.9/include -cxx-isystem /home/tools/intel/oneapi/dpcpp-ct/2025.2/include -cxx-isystem /home/tools/intel/oneapi/dal/2025.8/include -cxx-isystem /home/tools/intel/oneapi/dal/2025.8/include/dal -internal-isystem /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include -internal-isystem /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -fintel-libimf-allowed -o CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/home/tools/intel/oneapi/umf/0.11/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/home/tools/intel/oneapi/mkl/2025.2/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/tools/intel/oneapi/dnnl/2025.2/include]
+        ignore line: [ /home/tools/intel/oneapi/dev-utilities/2025.2/include]
+        ignore line: [ /home/tools/intel/oneapi/ccl/2021.16/include]
+        ignore line: [ /home/tools/intel/oneapi/umf/0.11/include]
+        ignore line: [ /home/tools/intel/oneapi/tbb/2022.2/env/../include]
+        ignore line: [ /home/tools/intel/oneapi/pti/0.13/include]
+        ignore line: [ /home/tools/intel/oneapi/mpi/2021.16/include]
+        ignore line: [ /home/tools/intel/oneapi/mkl/2025.2/include]
+        ignore line: [ /home/tools/intel/oneapi/ippcp/2025.2/include]
+        ignore line: [ /home/tools/intel/oneapi/ipp/2022.2/include]
+        ignore line: [ /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include]
+        ignore line: [ /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_b6c72]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6c72.dir/link.txt --verbose=1]
+        ignore line: [/home/tools/intel/oneapi/compiler/2025.2/bin/icx  -v CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -o cmTC_b6c72 ]
+        ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2025.2.1 (2025.2.0.20250806)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler]
+        ignore line: [Configuration file: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../icx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /home/tools/cuda/cuda-12.2  version 12.2]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b6c72 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/tools/intel/oneapi/tcm/1.4/lib -L/home/tools/intel/oneapi/umf/0.11/lib -L/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8 -L/home/tools/intel/oneapi/pti/0.13/lib -L/home/tools/intel/oneapi/mpi/2021.16/lib -L/home/tools/intel/oneapi/mkl/2025.2/lib -L/home/tools/intel/oneapi/ippcp/2025.2/lib/ -L/home/tools/intel/oneapi/ipp/2022.2/lib -L/home/tools/intel/oneapi/dnnl/2025.2/lib -L/home/tools/intel/oneapi/dal/2025.8/lib -L/home/tools/intel/oneapi/compiler/2025.2/lib -L/home/tools/intel/oneapi/ccl/2021.16/lib/ CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b6c72] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-L/home/tools/intel/oneapi/tcm/1.4/lib] ==> dir [/home/tools/intel/oneapi/tcm/1.4/lib]
+          arg [-L/home/tools/intel/oneapi/umf/0.11/lib] ==> dir [/home/tools/intel/oneapi/umf/0.11/lib]
+          arg [-L/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8] ==> dir [/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8]
+          arg [-L/home/tools/intel/oneapi/pti/0.13/lib] ==> dir [/home/tools/intel/oneapi/pti/0.13/lib]
+          arg [-L/home/tools/intel/oneapi/mpi/2021.16/lib] ==> dir [/home/tools/intel/oneapi/mpi/2021.16/lib]
+          arg [-L/home/tools/intel/oneapi/mkl/2025.2/lib] ==> dir [/home/tools/intel/oneapi/mkl/2025.2/lib]
+          arg [-L/home/tools/intel/oneapi/ippcp/2025.2/lib/] ==> dir [/home/tools/intel/oneapi/ippcp/2025.2/lib/]
+          arg [-L/home/tools/intel/oneapi/ipp/2022.2/lib] ==> dir [/home/tools/intel/oneapi/ipp/2022.2/lib]
+          arg [-L/home/tools/intel/oneapi/dnnl/2025.2/lib] ==> dir [/home/tools/intel/oneapi/dnnl/2025.2/lib]
+          arg [-L/home/tools/intel/oneapi/dal/2025.8/lib] ==> dir [/home/tools/intel/oneapi/dal/2025.8/lib]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/lib]
+          arg [-L/home/tools/intel/oneapi/ccl/2021.16/lib/] ==> dir [/home/tools/intel/oneapi/ccl/2021.16/lib/]
+          arg [CMakeFiles/cmTC_b6c72.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lsvml] ==> lib [svml]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-Bstatic] ==> search static
+          arg [-lirng] ==> lib [irng]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-Bstatic] ==> search static
+          arg [-limf] ==> lib [imf]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lirc] ==> lib [irc]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-ldl] ==> lib [dl]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lirc_s] ==> lib [irc_s]
+          arg [-Bdynamic] ==> search dynamic
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/opt/compiler/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/home/tools/intel/oneapi/tcm/1.4/lib] ==> [/home/tools/intel/oneapi/tcm/1.4/lib]
+        collapse library dir [/home/tools/intel/oneapi/umf/0.11/lib] ==> [/home/tools/intel/oneapi/umf/0.11/lib]
+        collapse library dir [/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8] ==> [/home/tools/intel/oneapi/tbb/2022.2/lib/intel64/gcc4.8]
+        collapse library dir [/home/tools/intel/oneapi/pti/0.13/lib] ==> [/home/tools/intel/oneapi/pti/0.13/lib]
+        collapse library dir [/home/tools/intel/oneapi/mpi/2021.16/lib] ==> [/home/tools/intel/oneapi/mpi/2021.16/lib]
+        collapse library dir [/home/tools/intel/oneapi/mkl/2025.2/lib] ==> [/home/tools/intel/oneapi/mkl/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/ippcp/2025.2/lib/] ==> [/home/tools/intel/oneapi/ippcp/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/ipp/2022.2/lib] ==> [/home/tools/intel/oneapi/ipp/2022.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/dnnl/2025.2/lib] ==> [/home/tools/intel/oneapi/dnnl/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/dal/2025.8/lib] ==> [/home/tools/intel/oneapi/dal/2025.8/lib]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/ccl/2021.16/lib/] ==> [/home/tools/intel/oneapi/ccl/2021.16/lib]
+        implicit libs: [svml;irng;imf;m;gcc;gcc_s;irc;dl;gcc;gcc_s;c;gcc;gcc_s;irc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/home/tools/intel/oneapi/compiler/2025.2/lib;/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu;/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/home/tools/intel/oneapi/compiler/2025.2/opt/compiler/lib;/lib;/usr/lib;/home/tools/intel/oneapi/tcm/1.4/lib;/home/tools/intel/oneapi/umf/0.11/lib;/home/tools/intel/oneapi/tbb/2022.2/lib/intel64/gcc4.8;/home/tools/intel/oneapi/pti/0.13/lib;/home/tools/intel/oneapi/mpi/2021.16/lib;/home/tools/intel/oneapi/mkl/2025.2/lib;/home/tools/intel/oneapi/ippcp/2025.2/lib;/home/tools/intel/oneapi/ipp/2022.2/lib;/home/tools/intel/oneapi/dnnl/2025.2/lib;/home/tools/intel/oneapi/dal/2025.8/lib;/home/tools/intel/oneapi/ccl/2021.16/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5"
+      binary: "/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2a60/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f2a60.dir/build.make CMakeFiles/cmTC_f2a60.dir/build
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5'
+        Building CXX object CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -v -MD -MT CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Intel(R) oneAPI DPC++/C++ Compiler 2025.2.1 (2025.2.0.20250806)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler
+        Configuration file: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../icpx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /home/tools/cuda/cuda-12.2, version 12.2
+         (in-process)
+         "/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -faltmathlib=SVMLAltMathLibrary -mframe-pointer=none -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast-honor-pragmas -fno-rounding-math -complex-range=promoted -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5 -v -fcoverage-compilation-dir=/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5 -fclang-abi-compat=17 -resource-dir /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21 -dependency-file CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I/home/tools/intel/oneapi/umf/0.11/include -I/home/tools/intel/oneapi/mkl/2025.2/include -I/home/tools/intel/oneapi/dnnl/2025.2/include -I/home/tools/intel/oneapi/dev-utilities/2025.2/include -I/home/tools/intel/oneapi/ccl/2021.16/include -c-isystem /home/tools/intel/oneapi/umf/0.11/include -c-isystem /home/tools/intel/oneapi/tbb/2022.2/env/../include -c-isystem /home/tools/intel/oneapi/pti/0.13/include -c-isystem /home/tools/intel/oneapi/mpi/2021.16/include -c-isystem /home/tools/intel/oneapi/mkl/2025.2/include -c-isystem /home/tools/intel/oneapi/ippcp/2025.2/include -c-isystem /home/tools/intel/oneapi/ipp/2022.2/include -cxx-isystem /home/tools/intel/oneapi/umf/0.11/include -cxx-isystem /home/tools/intel/oneapi/tbb/2022.2/env/../include -cxx-isystem /home/tools/intel/oneapi/pti/0.13/include -cxx-isystem /home/tools/intel/oneapi/mpi/2021.16/include -cxx-isystem /home/tools/intel/oneapi/mkl/2025.2/include -cxx-isystem /home/tools/intel/oneapi/ippcp/2025.2/include -cxx-isystem /home/tools/intel/oneapi/ipp/2022.2/include -cxx-isystem /home/tools/intel/oneapi/dpl/2022.9/include -cxx-isystem /home/tools/intel/oneapi/dpcpp-ct/2025.2/include -cxx-isystem /home/tools/intel/oneapi/dal/2025.8/include -cxx-isystem /home/tools/intel/oneapi/dal/2025.8/include/dal -internal-isystem /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -fintel-libimf-allowed -o CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/home/tools/intel/oneapi/umf/0.11/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/home/tools/intel/oneapi/mkl/2025.2/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/tools/intel/oneapi/dnnl/2025.2/include
+         /home/tools/intel/oneapi/dev-utilities/2025.2/include
+         /home/tools/intel/oneapi/ccl/2021.16/include
+         /home/tools/intel/oneapi/umf/0.11/include
+         /home/tools/intel/oneapi/tbb/2022.2/env/../include
+         /home/tools/intel/oneapi/pti/0.13/include
+         /home/tools/intel/oneapi/mpi/2021.16/include
+         /home/tools/intel/oneapi/mkl/2025.2/include
+         /home/tools/intel/oneapi/ippcp/2025.2/include
+         /home/tools/intel/oneapi/ipp/2022.2/include
+         /home/tools/intel/oneapi/dpl/2022.9/include
+         /home/tools/intel/oneapi/dpcpp-ct/2025.2/include
+         /home/tools/intel/oneapi/dal/2025.8/include
+         /home/tools/intel/oneapi/dal/2025.8/include/dal
+         /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include
+         /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13
+         /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13
+         /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward
+         /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_f2a60
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2a60.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx  -v CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f2a60 
+        Intel(R) oneAPI DPC++/C++ Compiler 2025.2.1 (2025.2.0.20250806)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler
+        Configuration file: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../icpx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /home/tools/cuda/cuda-12.2, version 12.2
+         "/usr/bin/ld" -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f2a60 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/tools/intel/oneapi/tcm/1.4/lib -L/home/tools/intel/oneapi/umf/0.11/lib -L/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8 -L/home/tools/intel/oneapi/pti/0.13/lib -L/home/tools/intel/oneapi/mpi/2021.16/lib -L/home/tools/intel/oneapi/mkl/2025.2/lib -L/home/tools/intel/oneapi/ippcp/2025.2/lib/ -L/home/tools/intel/oneapi/ipp/2022.2/lib -L/home/tools/intel/oneapi/dnnl/2025.2/lib -L/home/tools/intel/oneapi/dal/2025.8/lib -L/home/tools/intel/oneapi/compiler/2025.2/lib -L/home/tools/intel/oneapi/ccl/2021.16/lib/ CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/tools/intel/oneapi/dnnl/2025.2/include]
+          add: [/home/tools/intel/oneapi/dev-utilities/2025.2/include]
+          add: [/home/tools/intel/oneapi/ccl/2021.16/include]
+          add: [/home/tools/intel/oneapi/umf/0.11/include]
+          add: [/home/tools/intel/oneapi/tbb/2022.2/env/../include]
+          add: [/home/tools/intel/oneapi/pti/0.13/include]
+          add: [/home/tools/intel/oneapi/mpi/2021.16/include]
+          add: [/home/tools/intel/oneapi/mkl/2025.2/include]
+          add: [/home/tools/intel/oneapi/ippcp/2025.2/include]
+          add: [/home/tools/intel/oneapi/ipp/2022.2/include]
+          add: [/home/tools/intel/oneapi/dpl/2022.9/include]
+          add: [/home/tools/intel/oneapi/dpcpp-ct/2025.2/include]
+          add: [/home/tools/intel/oneapi/dal/2025.8/include]
+          add: [/home/tools/intel/oneapi/dal/2025.8/include/dal]
+          add: [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+          add: [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/tools/intel/oneapi/dnnl/2025.2/include] ==> [/home/tools/intel/oneapi/dnnl/2025.2/include]
+        collapse include dir [/home/tools/intel/oneapi/dev-utilities/2025.2/include] ==> [/home/tools/intel/oneapi/dev-utilities/2025.2/include]
+        collapse include dir [/home/tools/intel/oneapi/ccl/2021.16/include] ==> [/home/tools/intel/oneapi/ccl/2021.16/include]
+        collapse include dir [/home/tools/intel/oneapi/umf/0.11/include] ==> [/home/tools/intel/oneapi/umf/0.11/include]
+        collapse include dir [/home/tools/intel/oneapi/tbb/2022.2/env/../include] ==> [/home/tools/intel/oneapi/tbb/2022.2/include]
+        collapse include dir [/home/tools/intel/oneapi/pti/0.13/include] ==> [/home/tools/intel/oneapi/pti/0.13/include]
+        collapse include dir [/home/tools/intel/oneapi/mpi/2021.16/include] ==> [/home/tools/intel/oneapi/mpi/2021.16/include]
+        collapse include dir [/home/tools/intel/oneapi/mkl/2025.2/include] ==> [/home/tools/intel/oneapi/mkl/2025.2/include]
+        collapse include dir [/home/tools/intel/oneapi/ippcp/2025.2/include] ==> [/home/tools/intel/oneapi/ippcp/2025.2/include]
+        collapse include dir [/home/tools/intel/oneapi/ipp/2022.2/include] ==> [/home/tools/intel/oneapi/ipp/2022.2/include]
+        collapse include dir [/home/tools/intel/oneapi/dpl/2022.9/include] ==> [/home/tools/intel/oneapi/dpl/2022.9/include]
+        collapse include dir [/home/tools/intel/oneapi/dpcpp-ct/2025.2/include] ==> [/home/tools/intel/oneapi/dpcpp-ct/2025.2/include]
+        collapse include dir [/home/tools/intel/oneapi/dal/2025.8/include] ==> [/home/tools/intel/oneapi/dal/2025.8/include]
+        collapse include dir [/home/tools/intel/oneapi/dal/2025.8/include/dal] ==> [/home/tools/intel/oneapi/dal/2025.8/include/dal]
+        collapse include dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include] ==> [/home/tools/intel/oneapi/compiler/2025.2/opt/compiler/include]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/tools/intel/oneapi/dnnl/2025.2/include;/home/tools/intel/oneapi/dev-utilities/2025.2/include;/home/tools/intel/oneapi/ccl/2021.16/include;/home/tools/intel/oneapi/umf/0.11/include;/home/tools/intel/oneapi/tbb/2022.2/include;/home/tools/intel/oneapi/pti/0.13/include;/home/tools/intel/oneapi/mpi/2021.16/include;/home/tools/intel/oneapi/mkl/2025.2/include;/home/tools/intel/oneapi/ippcp/2025.2/include;/home/tools/intel/oneapi/ipp/2022.2/include;/home/tools/intel/oneapi/dpl/2022.9/include;/home/tools/intel/oneapi/dpcpp-ct/2025.2/include;/home/tools/intel/oneapi/dal/2025.8/include;/home/tools/intel/oneapi/dal/2025.8/include/dal;/home/tools/intel/oneapi/compiler/2025.2/opt/compiler/include;/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2a60/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f2a60.dir/build.make CMakeFiles/cmTC_f2a60.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5']
+        ignore line: [Building CXX object CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -v -MD -MT CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2025.2.1 (2025.2.0.20250806)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler]
+        ignore line: [Configuration file: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../icpx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /home/tools/cuda/cuda-12.2  version 12.2]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -faltmathlib=SVMLAltMathLibrary -mframe-pointer=none -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast-honor-pragmas -fno-rounding-math -complex-range=promoted -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5 -v -fcoverage-compilation-dir=/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-NY2aB5 -fclang-abi-compat=17 -resource-dir /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21 -dependency-file CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I/home/tools/intel/oneapi/umf/0.11/include -I/home/tools/intel/oneapi/mkl/2025.2/include -I/home/tools/intel/oneapi/dnnl/2025.2/include -I/home/tools/intel/oneapi/dev-utilities/2025.2/include -I/home/tools/intel/oneapi/ccl/2021.16/include -c-isystem /home/tools/intel/oneapi/umf/0.11/include -c-isystem /home/tools/intel/oneapi/tbb/2022.2/env/../include -c-isystem /home/tools/intel/oneapi/pti/0.13/include -c-isystem /home/tools/intel/oneapi/mpi/2021.16/include -c-isystem /home/tools/intel/oneapi/mkl/2025.2/include -c-isystem /home/tools/intel/oneapi/ippcp/2025.2/include -c-isystem /home/tools/intel/oneapi/ipp/2022.2/include -cxx-isystem /home/tools/intel/oneapi/umf/0.11/include -cxx-isystem /home/tools/intel/oneapi/tbb/2022.2/env/../include -cxx-isystem /home/tools/intel/oneapi/pti/0.13/include -cxx-isystem /home/tools/intel/oneapi/mpi/2021.16/include -cxx-isystem /home/tools/intel/oneapi/mkl/2025.2/include -cxx-isystem /home/tools/intel/oneapi/ippcp/2025.2/include -cxx-isystem /home/tools/intel/oneapi/ipp/2022.2/include -cxx-isystem /home/tools/intel/oneapi/dpl/2022.9/include -cxx-isystem /home/tools/intel/oneapi/dpcpp-ct/2025.2/include -cxx-isystem /home/tools/intel/oneapi/dal/2025.8/include -cxx-isystem /home/tools/intel/oneapi/dal/2025.8/include/dal -internal-isystem /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -fintel-libimf-allowed -o CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/home/tools/intel/oneapi/umf/0.11/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/home/tools/intel/oneapi/mkl/2025.2/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/tools/intel/oneapi/dnnl/2025.2/include]
+        ignore line: [ /home/tools/intel/oneapi/dev-utilities/2025.2/include]
+        ignore line: [ /home/tools/intel/oneapi/ccl/2021.16/include]
+        ignore line: [ /home/tools/intel/oneapi/umf/0.11/include]
+        ignore line: [ /home/tools/intel/oneapi/tbb/2022.2/env/../include]
+        ignore line: [ /home/tools/intel/oneapi/pti/0.13/include]
+        ignore line: [ /home/tools/intel/oneapi/mpi/2021.16/include]
+        ignore line: [ /home/tools/intel/oneapi/mkl/2025.2/include]
+        ignore line: [ /home/tools/intel/oneapi/ippcp/2025.2/include]
+        ignore line: [ /home/tools/intel/oneapi/ipp/2022.2/include]
+        ignore line: [ /home/tools/intel/oneapi/dpl/2022.9/include]
+        ignore line: [ /home/tools/intel/oneapi/dpcpp-ct/2025.2/include]
+        ignore line: [ /home/tools/intel/oneapi/dal/2025.8/include]
+        ignore line: [ /home/tools/intel/oneapi/dal/2025.8/include/dal]
+        ignore line: [ /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/include]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+        ignore line: [ /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_f2a60]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2a60.dir/link.txt --verbose=1]
+        ignore line: [/home/tools/intel/oneapi/compiler/2025.2/bin/icpx  -v CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f2a60 ]
+        ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2025.2.1 (2025.2.0.20250806)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler]
+        ignore line: [Configuration file: /home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../icpx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /home/tools/cuda/cuda-12.2  version 12.2]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f2a60 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib -L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/tools/intel/oneapi/tcm/1.4/lib -L/home/tools/intel/oneapi/umf/0.11/lib -L/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8 -L/home/tools/intel/oneapi/pti/0.13/lib -L/home/tools/intel/oneapi/mpi/2021.16/lib -L/home/tools/intel/oneapi/mkl/2025.2/lib -L/home/tools/intel/oneapi/ippcp/2025.2/lib/ -L/home/tools/intel/oneapi/ipp/2022.2/lib -L/home/tools/intel/oneapi/dnnl/2025.2/lib -L/home/tools/intel/oneapi/dal/2025.8/lib -L/home/tools/intel/oneapi/compiler/2025.2/lib -L/home/tools/intel/oneapi/ccl/2021.16/lib/ CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f2a60] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-L/home/tools/intel/oneapi/tcm/1.4/lib] ==> dir [/home/tools/intel/oneapi/tcm/1.4/lib]
+          arg [-L/home/tools/intel/oneapi/umf/0.11/lib] ==> dir [/home/tools/intel/oneapi/umf/0.11/lib]
+          arg [-L/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8] ==> dir [/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8]
+          arg [-L/home/tools/intel/oneapi/pti/0.13/lib] ==> dir [/home/tools/intel/oneapi/pti/0.13/lib]
+          arg [-L/home/tools/intel/oneapi/mpi/2021.16/lib] ==> dir [/home/tools/intel/oneapi/mpi/2021.16/lib]
+          arg [-L/home/tools/intel/oneapi/mkl/2025.2/lib] ==> dir [/home/tools/intel/oneapi/mkl/2025.2/lib]
+          arg [-L/home/tools/intel/oneapi/ippcp/2025.2/lib/] ==> dir [/home/tools/intel/oneapi/ippcp/2025.2/lib/]
+          arg [-L/home/tools/intel/oneapi/ipp/2022.2/lib] ==> dir [/home/tools/intel/oneapi/ipp/2022.2/lib]
+          arg [-L/home/tools/intel/oneapi/dnnl/2025.2/lib] ==> dir [/home/tools/intel/oneapi/dnnl/2025.2/lib]
+          arg [-L/home/tools/intel/oneapi/dal/2025.8/lib] ==> dir [/home/tools/intel/oneapi/dal/2025.8/lib]
+          arg [-L/home/tools/intel/oneapi/compiler/2025.2/lib] ==> dir [/home/tools/intel/oneapi/compiler/2025.2/lib]
+          arg [-L/home/tools/intel/oneapi/ccl/2021.16/lib/] ==> dir [/home/tools/intel/oneapi/ccl/2021.16/lib/]
+          arg [CMakeFiles/cmTC_f2a60.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lsvml] ==> lib [svml]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-Bstatic] ==> search static
+          arg [-lirng] ==> lib [irng]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-Bstatic] ==> search static
+          arg [-limf] ==> lib [imf]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-Bstatic] ==> search static
+          arg [-lirc] ==> lib [irc]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-ldl] ==> lib [dl]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-Bstatic] ==> search static
+          arg [-lirc_s] ==> lib [irc_s]
+          arg [-Bdynamic] ==> search dynamic
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/bin/compiler/../../opt/compiler/lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/opt/compiler/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/home/tools/intel/oneapi/tcm/1.4/lib] ==> [/home/tools/intel/oneapi/tcm/1.4/lib]
+        collapse library dir [/home/tools/intel/oneapi/umf/0.11/lib] ==> [/home/tools/intel/oneapi/umf/0.11/lib]
+        collapse library dir [/home/tools/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8] ==> [/home/tools/intel/oneapi/tbb/2022.2/lib/intel64/gcc4.8]
+        collapse library dir [/home/tools/intel/oneapi/pti/0.13/lib] ==> [/home/tools/intel/oneapi/pti/0.13/lib]
+        collapse library dir [/home/tools/intel/oneapi/mpi/2021.16/lib] ==> [/home/tools/intel/oneapi/mpi/2021.16/lib]
+        collapse library dir [/home/tools/intel/oneapi/mkl/2025.2/lib] ==> [/home/tools/intel/oneapi/mkl/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/ippcp/2025.2/lib/] ==> [/home/tools/intel/oneapi/ippcp/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/ipp/2022.2/lib] ==> [/home/tools/intel/oneapi/ipp/2022.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/dnnl/2025.2/lib] ==> [/home/tools/intel/oneapi/dnnl/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/dal/2025.8/lib] ==> [/home/tools/intel/oneapi/dal/2025.8/lib]
+        collapse library dir [/home/tools/intel/oneapi/compiler/2025.2/lib] ==> [/home/tools/intel/oneapi/compiler/2025.2/lib]
+        collapse library dir [/home/tools/intel/oneapi/ccl/2021.16/lib/] ==> [/home/tools/intel/oneapi/ccl/2021.16/lib]
+        implicit libs: [svml;irng;stdc++;imf;m;gcc_s;gcc;irc;dl;gcc_s;gcc;c;gcc_s;gcc;irc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/home/tools/intel/oneapi/compiler/2025.2/lib;/home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/lib/x86_64-unknown-linux-gnu;/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/home/tools/intel/oneapi/compiler/2025.2/opt/compiler/lib;/lib;/usr/lib;/home/tools/intel/oneapi/tcm/1.4/lib;/home/tools/intel/oneapi/umf/0.11/lib;/home/tools/intel/oneapi/tbb/2022.2/lib/intel64/gcc4.8;/home/tools/intel/oneapi/pti/0.13/lib;/home/tools/intel/oneapi/mpi/2021.16/lib;/home/tools/intel/oneapi/mkl/2025.2/lib;/home/tools/intel/oneapi/ippcp/2025.2/lib;/home/tools/intel/oneapi/ipp/2022.2/lib;/home/tools/intel/oneapi/dnnl/2025.2/lib;/home/tools/intel/oneapi/dal/2025.8/lib;/home/tools/intel/oneapi/ccl/2021.16/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "deps/tbb/CMakeLists.txt:243 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-yTAQJM"
+      binary: "/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-yTAQJM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-yTAQJM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4b97c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4b97c.dir/build.make CMakeFiles/cmTC_4b97c.dir/build
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-yTAQJM'
+        Building C object CMakeFiles/cmTC_4b97c.dir/src.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_4b97c.dir/src.c.o -MF CMakeFiles/cmTC_4b97c.dir/src.c.o.d -o CMakeFiles/cmTC_4b97c.dir/src.c.o -c /home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-yTAQJM/src.c
+        Linking C executable cmTC_4b97c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b97c.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx CMakeFiles/cmTC_4b97c.dir/src.c.o -o cmTC_4b97c 
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-yTAQJM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "deps/tbb/cmake/resumable_tasks.cmake:23 (check_symbol_exists)"
+      - "deps/tbb/CMakeLists.txt:248 (include)"
+    checks:
+      - "Looking for getcontext"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-JvBADf"
+      binary: "/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-JvBADf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_tbb_have_ucontext"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-JvBADf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_33daf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_33daf.dir/build.make CMakeFiles/cmTC_33daf.dir/build
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-JvBADf'
+        Building C object CMakeFiles/cmTC_33daf.dir/CheckSymbolExists.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -Wno-deprecated-declarations -MD -MT CMakeFiles/cmTC_33daf.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_33daf.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_33daf.dir/CheckSymbolExists.c.o -c /home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-JvBADf/CheckSymbolExists.c
+        Linking C executable cmTC_33daf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33daf.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx  -Wno-deprecated-declarations CMakeFiles/cmTC_33daf.dir/CheckSymbolExists.c.o -o cmTC_33daf 
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/CMakeFiles/CMakeScratch/TryCompile-JvBADf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icpx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "deps/tbb/CMakeLists.txt:258 (check_ipo_supported)"
+    directories:
+      source: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src -B/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/llvm-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/llvm-ranlib" libfoo.a
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx   -g -Rno-debug-disables-optimization -ipo -MD -MT CMakeFiles/boo.dir/main.c.o -MF CMakeFiles/boo.dir/main.c.o.d -o CMakeFiles/boo.dir/main.c.o -c /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /home/tools/intel/oneapi/compiler/2025.2/bin/icx -g -Rno-debug-disables-optimization -ipo -ipo CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/powerzhang/zombie/build_icpx/deps/tbb/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
