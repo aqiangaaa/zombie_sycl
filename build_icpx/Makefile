@@ -293,6 +293,84 @@ experiment_runner/fast:
 .PHONY : experiment_runner/fast
 
 #=============================================================================
+# Target rules for targets named batch_test
+
+# Build rule for target.
+batch_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 batch_test
+.PHONY : batch_test
+
+# fast build rule for target.
+batch_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_test.dir/build.make CMakeFiles/batch_test.dir/build
+.PHONY : batch_test/fast
+
+#=============================================================================
+# Target rules for targets named wos_mesh_test
+
+# Build rule for target.
+wos_mesh_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wos_mesh_test
+.PHONY : wos_mesh_test
+
+# fast build rule for target.
+wos_mesh_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_mesh_test.dir/build.make CMakeFiles/wos_mesh_test.dir/build
+.PHONY : wos_mesh_test/fast
+
+#=============================================================================
+# Target rules for targets named test_longtail
+
+# Build rule for target.
+test_longtail: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_longtail
+.PHONY : test_longtail
+
+# fast build rule for target.
+test_longtail/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_longtail.dir/build.make CMakeFiles/test_longtail.dir/build
+.PHONY : test_longtail/fast
+
+#=============================================================================
+# Target rules for targets named wos_3d_test
+
+# Build rule for target.
+wos_3d_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wos_3d_test
+.PHONY : wos_3d_test
+
+# fast build rule for target.
+wos_3d_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_3d_test.dir/build.make CMakeFiles/wos_3d_test.dir/build
+.PHONY : wos_3d_test/fast
+
+#=============================================================================
+# Target rules for targets named wos_3d_mesh_test
+
+# Build rule for target.
+wos_3d_mesh_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wos_3d_mesh_test
+.PHONY : wos_3d_mesh_test
+
+# fast build rule for target.
+wos_3d_mesh_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_3d_mesh_test.dir/build.make CMakeFiles/wos_3d_mesh_test.dir/build
+.PHONY : wos_3d_mesh_test/fast
+
+#=============================================================================
+# Target rules for targets named param_sweep
+
+# Build rule for target.
+param_sweep: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 param_sweep
+.PHONY : param_sweep
+
+# fast build rule for target.
+param_sweep/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/param_sweep.dir/build.make CMakeFiles/param_sweep.dir/build
+.PHONY : param_sweep/fast
+
+#=============================================================================
 # Target rules for targets named tbb
 
 # Build rule for target.
@@ -344,6 +422,30 @@ demo/fast:
 	$(MAKE) $(MAKESILENT) -f demo/CMakeFiles/demo.dir/build.make demo/CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
+sycl/batch_test.o: sycl/batch_test.cpp.o
+.PHONY : sycl/batch_test.o
+
+# target to build an object file
+sycl/batch_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_test.dir/build.make CMakeFiles/batch_test.dir/sycl/batch_test.cpp.o
+.PHONY : sycl/batch_test.cpp.o
+
+sycl/batch_test.i: sycl/batch_test.cpp.i
+.PHONY : sycl/batch_test.i
+
+# target to preprocess a source file
+sycl/batch_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_test.dir/build.make CMakeFiles/batch_test.dir/sycl/batch_test.cpp.i
+.PHONY : sycl/batch_test.cpp.i
+
+sycl/batch_test.s: sycl/batch_test.cpp.s
+.PHONY : sycl/batch_test.s
+
+# target to generate assembly for a file
+sycl/batch_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_test.dir/build.make CMakeFiles/batch_test.dir/sycl/batch_test.cpp.s
+.PHONY : sycl/batch_test.cpp.s
+
 sycl/experiment_runner.o: sycl/experiment_runner.cpp.o
 .PHONY : sycl/experiment_runner.o
 
@@ -391,6 +493,54 @@ sycl/hello_sycl.s: sycl/hello_sycl.cpp.s
 sycl/hello_sycl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_sycl.dir/build.make CMakeFiles/hello_sycl.dir/sycl/hello_sycl.cpp.s
 .PHONY : sycl/hello_sycl.cpp.s
+
+sycl/param_sweep.o: sycl/param_sweep.cpp.o
+.PHONY : sycl/param_sweep.o
+
+# target to build an object file
+sycl/param_sweep.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/param_sweep.dir/build.make CMakeFiles/param_sweep.dir/sycl/param_sweep.cpp.o
+.PHONY : sycl/param_sweep.cpp.o
+
+sycl/param_sweep.i: sycl/param_sweep.cpp.i
+.PHONY : sycl/param_sweep.i
+
+# target to preprocess a source file
+sycl/param_sweep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/param_sweep.dir/build.make CMakeFiles/param_sweep.dir/sycl/param_sweep.cpp.i
+.PHONY : sycl/param_sweep.cpp.i
+
+sycl/param_sweep.s: sycl/param_sweep.cpp.s
+.PHONY : sycl/param_sweep.s
+
+# target to generate assembly for a file
+sycl/param_sweep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/param_sweep.dir/build.make CMakeFiles/param_sweep.dir/sycl/param_sweep.cpp.s
+.PHONY : sycl/param_sweep.cpp.s
+
+sycl/test_longtail.o: sycl/test_longtail.cpp.o
+.PHONY : sycl/test_longtail.o
+
+# target to build an object file
+sycl/test_longtail.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_longtail.dir/build.make CMakeFiles/test_longtail.dir/sycl/test_longtail.cpp.o
+.PHONY : sycl/test_longtail.cpp.o
+
+sycl/test_longtail.i: sycl/test_longtail.cpp.i
+.PHONY : sycl/test_longtail.i
+
+# target to preprocess a source file
+sycl/test_longtail.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_longtail.dir/build.make CMakeFiles/test_longtail.dir/sycl/test_longtail.cpp.i
+.PHONY : sycl/test_longtail.cpp.i
+
+sycl/test_longtail.s: sycl/test_longtail.cpp.s
+.PHONY : sycl/test_longtail.s
+
+# target to generate assembly for a file
+sycl/test_longtail.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_longtail.dir/build.make CMakeFiles/test_longtail.dir/sycl/test_longtail.cpp.s
+.PHONY : sycl/test_longtail.cpp.s
 
 sycl/walkstate_bridge_sycl.o: sycl/walkstate_bridge_sycl.cpp.o
 .PHONY : sycl/walkstate_bridge_sycl.o
@@ -488,6 +638,54 @@ sycl/walktask_phased_sycl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walktask_phased_sycl.dir/build.make CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.s
 .PHONY : sycl/walktask_phased_sycl.cpp.s
 
+sycl/wos_3d_mesh_test.o: sycl/wos_3d_mesh_test.cpp.o
+.PHONY : sycl/wos_3d_mesh_test.o
+
+# target to build an object file
+sycl/wos_3d_mesh_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_3d_mesh_test.dir/build.make CMakeFiles/wos_3d_mesh_test.dir/sycl/wos_3d_mesh_test.cpp.o
+.PHONY : sycl/wos_3d_mesh_test.cpp.o
+
+sycl/wos_3d_mesh_test.i: sycl/wos_3d_mesh_test.cpp.i
+.PHONY : sycl/wos_3d_mesh_test.i
+
+# target to preprocess a source file
+sycl/wos_3d_mesh_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_3d_mesh_test.dir/build.make CMakeFiles/wos_3d_mesh_test.dir/sycl/wos_3d_mesh_test.cpp.i
+.PHONY : sycl/wos_3d_mesh_test.cpp.i
+
+sycl/wos_3d_mesh_test.s: sycl/wos_3d_mesh_test.cpp.s
+.PHONY : sycl/wos_3d_mesh_test.s
+
+# target to generate assembly for a file
+sycl/wos_3d_mesh_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_3d_mesh_test.dir/build.make CMakeFiles/wos_3d_mesh_test.dir/sycl/wos_3d_mesh_test.cpp.s
+.PHONY : sycl/wos_3d_mesh_test.cpp.s
+
+sycl/wos_3d_test.o: sycl/wos_3d_test.cpp.o
+.PHONY : sycl/wos_3d_test.o
+
+# target to build an object file
+sycl/wos_3d_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_3d_test.dir/build.make CMakeFiles/wos_3d_test.dir/sycl/wos_3d_test.cpp.o
+.PHONY : sycl/wos_3d_test.cpp.o
+
+sycl/wos_3d_test.i: sycl/wos_3d_test.cpp.i
+.PHONY : sycl/wos_3d_test.i
+
+# target to preprocess a source file
+sycl/wos_3d_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_3d_test.dir/build.make CMakeFiles/wos_3d_test.dir/sycl/wos_3d_test.cpp.i
+.PHONY : sycl/wos_3d_test.cpp.i
+
+sycl/wos_3d_test.s: sycl/wos_3d_test.cpp.s
+.PHONY : sycl/wos_3d_test.s
+
+# target to generate assembly for a file
+sycl/wos_3d_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_3d_test.dir/build.make CMakeFiles/wos_3d_test.dir/sycl/wos_3d_test.cpp.s
+.PHONY : sycl/wos_3d_test.cpp.s
+
 sycl/wos_analytic_test.o: sycl/wos_analytic_test.cpp.o
 .PHONY : sycl/wos_analytic_test.o
 
@@ -511,6 +709,30 @@ sycl/wos_analytic_test.s: sycl/wos_analytic_test.cpp.s
 sycl/wos_analytic_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_analytic_test.dir/build.make CMakeFiles/wos_analytic_test.dir/sycl/wos_analytic_test.cpp.s
 .PHONY : sycl/wos_analytic_test.cpp.s
+
+sycl/wos_mesh_test.o: sycl/wos_mesh_test.cpp.o
+.PHONY : sycl/wos_mesh_test.o
+
+# target to build an object file
+sycl/wos_mesh_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_mesh_test.dir/build.make CMakeFiles/wos_mesh_test.dir/sycl/wos_mesh_test.cpp.o
+.PHONY : sycl/wos_mesh_test.cpp.o
+
+sycl/wos_mesh_test.i: sycl/wos_mesh_test.cpp.i
+.PHONY : sycl/wos_mesh_test.i
+
+# target to preprocess a source file
+sycl/wos_mesh_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_mesh_test.dir/build.make CMakeFiles/wos_mesh_test.dir/sycl/wos_mesh_test.cpp.i
+.PHONY : sycl/wos_mesh_test.cpp.i
+
+sycl/wos_mesh_test.s: sycl/wos_mesh_test.cpp.s
+.PHONY : sycl/wos_mesh_test.s
+
+# target to generate assembly for a file
+sycl/wos_mesh_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_mesh_test.dir/build.make CMakeFiles/wos_mesh_test.dir/sycl/wos_mesh_test.cpp.s
+.PHONY : sycl/wos_mesh_test.cpp.s
 
 sycl/wos_multipoint_test.o: sycl/wos_multipoint_test.cpp.o
 .PHONY : sycl/wos_multipoint_test.o
@@ -642,28 +864,43 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... batch_test"
 	@echo "... demo"
 	@echo "... experiment_runner"
 	@echo "... hello_sycl"
+	@echo "... param_sweep"
 	@echo "... tbb"
 	@echo "... tbbmalloc"
 	@echo "... tbbmalloc_proxy"
+	@echo "... test_longtail"
 	@echo "... walkstate_bridge_sycl"
 	@echo "... walkstate_lite_sycl"
 	@echo "... walktask_lite_sycl"
 	@echo "... walktask_phased_sycl"
+	@echo "... wos_3d_mesh_test"
+	@echo "... wos_3d_test"
 	@echo "... wos_analytic_test"
+	@echo "... wos_mesh_test"
 	@echo "... wos_multipoint_test"
 	@echo "... wos_sycl_baseline"
 	@echo "... wos_sycl_dg"
 	@echo "... wos_sycl_mp"
 	@echo "... zombie_sycl_smoke"
+	@echo "... sycl/batch_test.o"
+	@echo "... sycl/batch_test.i"
+	@echo "... sycl/batch_test.s"
 	@echo "... sycl/experiment_runner.o"
 	@echo "... sycl/experiment_runner.i"
 	@echo "... sycl/experiment_runner.s"
 	@echo "... sycl/hello_sycl.o"
 	@echo "... sycl/hello_sycl.i"
 	@echo "... sycl/hello_sycl.s"
+	@echo "... sycl/param_sweep.o"
+	@echo "... sycl/param_sweep.i"
+	@echo "... sycl/param_sweep.s"
+	@echo "... sycl/test_longtail.o"
+	@echo "... sycl/test_longtail.i"
+	@echo "... sycl/test_longtail.s"
 	@echo "... sycl/walkstate_bridge_sycl.o"
 	@echo "... sycl/walkstate_bridge_sycl.i"
 	@echo "... sycl/walkstate_bridge_sycl.s"
@@ -676,9 +913,18 @@ help:
 	@echo "... sycl/walktask_phased_sycl.o"
 	@echo "... sycl/walktask_phased_sycl.i"
 	@echo "... sycl/walktask_phased_sycl.s"
+	@echo "... sycl/wos_3d_mesh_test.o"
+	@echo "... sycl/wos_3d_mesh_test.i"
+	@echo "... sycl/wos_3d_mesh_test.s"
+	@echo "... sycl/wos_3d_test.o"
+	@echo "... sycl/wos_3d_test.i"
+	@echo "... sycl/wos_3d_test.s"
 	@echo "... sycl/wos_analytic_test.o"
 	@echo "... sycl/wos_analytic_test.i"
 	@echo "... sycl/wos_analytic_test.s"
+	@echo "... sycl/wos_mesh_test.o"
+	@echo "... sycl/wos_mesh_test.i"
+	@echo "... sycl/wos_mesh_test.s"
 	@echo "... sycl/wos_multipoint_test.o"
 	@echo "... sycl/wos_multipoint_test.i"
 	@echo "... sycl/wos_multipoint_test.s"

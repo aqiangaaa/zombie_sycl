@@ -131,3 +131,33 @@ add_executable(experiment_runner sycl/experiment_runner.cpp)
 target_link_libraries(experiment_runner PRIVATE zombie)
 target_compile_options(experiment_runner PRIVATE ${SYCL_FLAGS})
 target_link_options(experiment_runner PRIVATE ${SYCL_FLAGS})
+
+add_executable(batch_test sycl/batch_test.cpp)
+target_link_libraries(batch_test PRIVATE zombie)
+target_compile_options(batch_test PRIVATE ${SYCL_FLAGS})
+target_link_options(batch_test PRIVATE ${SYCL_FLAGS})
+
+add_executable(wos_mesh_test sycl/wos_mesh_test.cpp)
+target_link_libraries(wos_mesh_test PRIVATE zombie)
+target_compile_options(wos_mesh_test PRIVATE ${SYCL_FLAGS})
+target_link_options(wos_mesh_test PRIVATE ${SYCL_FLAGS})
+
+add_executable(test_longtail sycl/test_longtail.cpp)
+target_link_libraries(test_longtail PRIVATE zombie)
+target_compile_options(test_longtail PRIVATE ${SYCL_FLAGS})
+target_link_options(test_longtail PRIVATE ${SYCL_FLAGS})
+
+add_executable(wos_3d_test sycl/wos_3d_test.cpp)
+target_link_libraries(wos_3d_test PRIVATE zombie)
+target_compile_options(wos_3d_test PRIVATE ${SYCL_FLAGS})
+target_link_options(wos_3d_test PRIVATE ${SYCL_FLAGS})
+
+add_executable(wos_3d_mesh_test sycl/wos_3d_mesh_test.cpp)
+target_link_libraries(wos_3d_mesh_test PRIVATE zombie)
+target_compile_options(wos_3d_mesh_test PRIVATE ${SYCL_FLAGS})
+target_link_options(wos_3d_mesh_test PRIVATE ${SYCL_FLAGS})
+
+add_executable(param_sweep sycl/param_sweep.cpp)
+target_link_libraries(param_sweep PRIVATE zombie)
+target_compile_options(param_sweep PRIVATE ${SYCL_FLAGS})
+target_link_options(param_sweep PRIVATE ${SYCL_FLAGS})

@@ -288,6 +288,7 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
   /home/powerzhang/zombie/sycl/greens_function_device.h \
   /home/powerzhang/zombie/sycl/pcg32_device.h \
   /home/powerzhang/zombie/sycl/phase_policy.h \
+  /home/powerzhang/zombie/sycl/precision_ops.h \
   /home/powerzhang/zombie/sycl/task_init.h \
   /home/powerzhang/zombie/sycl/task_runtime.h \
   /home/powerzhang/zombie/sycl/walkstate_bridge.h \
@@ -1801,6 +1802,10 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 
 /home/powerzhang/zombie/include/zombie/core/geometry_helpers.h:
 
+/home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm/usm_allocator.hpp:
+
+/home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/misc/Image.h:
+
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Core/DenseStorage.h:
 
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/misc/InternalHeaderCheck.h:
@@ -2310,6 +2315,8 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/info/ext_codeplay_device_traits.def:
 
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Core/ArrayBase.h:
+
+/home/powerzhang/zombie/sycl/precision_ops.h:
 
 /home/powerzhang/zombie/include/zombie/point_estimation/common.h:
 
@@ -3116,7 +3123,3 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/backend/level_zero.hpp:
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm.hpp:
-
-/home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/misc/Image.h:
-
-/home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm/usm_allocator.hpp:

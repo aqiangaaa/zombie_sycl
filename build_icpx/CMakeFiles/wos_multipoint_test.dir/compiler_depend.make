@@ -290,6 +290,7 @@ CMakeFiles/wos_multipoint_test.dir/sycl/wos_multipoint_test.cpp.o: /home/powerzh
   /home/powerzhang/zombie/sycl/mesh_loader.h \
   /home/powerzhang/zombie/sycl/pcg32_device.h \
   /home/powerzhang/zombie/sycl/phase_policy.h \
+  /home/powerzhang/zombie/sycl/precision_ops.h \
   /home/powerzhang/zombie/sycl/task_init.h \
   /home/powerzhang/zombie/sycl/task_runtime.h \
   /home/powerzhang/zombie/sycl/walkstate_bridge.h \
@@ -1685,6 +1686,8 @@ CMakeFiles/wos_multipoint_test.dir/sycl/wos_multipoint_test.cpp.o: /home/powerzh
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm/usm_pointer_info.hpp:
 
+/home/tools/intel/oneapi/compiler/2025.2/include/sycl/sycl_span.hpp:
+
 /usr/include/c++/13/future:
 
 /home/powerzhang/zombie/include/zombie/point_estimation/reverse_walk_on_stars.h:
@@ -2302,6 +2305,8 @@ CMakeFiles/wos_multipoint_test.dir/sycl/wos_multipoint_test.cpp.o: /home/powerzh
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/info/ext_codeplay_device_traits.def:
 
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Core/ArrayBase.h:
+
+/home/powerzhang/zombie/sycl/precision_ops.h:
 
 /home/powerzhang/zombie/include/zombie/point_estimation/common.h:
 
@@ -3124,5 +3129,3 @@ CMakeFiles/wos_multipoint_test.dir/sycl/wos_multipoint_test.cpp.o: /home/powerzh
 /usr/include/c++/13/bitset:
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/stream.hpp:
-
-/home/tools/intel/oneapi/compiler/2025.2/include/sycl/sycl_span.hpp:

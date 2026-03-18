@@ -1,0 +1,1 @@
+/home/tools/intel/oneapi/compiler/2025.2/bin/icpx -O3 -DNDEBUG -fsycl -fsycl-targets=nvptx64-nvidia-cuda CMakeFiles/test_longtail.dir/sycl/test_longtail.cpp.o -o test_longtail  -Wl,-rpath,/home/powerzhang/zombie/build_icpx/intelllvm_2025.2_cxx11_64_release intelllvm_2025.2_cxx11_64_release/libtbb.so.12.18 

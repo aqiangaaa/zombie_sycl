@@ -10,6 +10,12 @@
 /home/powerzhang/zombie/build_icpx/CMakeFiles/wos_sycl_dg.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/wos_sycl_mp.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/experiment_runner.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/batch_test.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/wos_mesh_test.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/test_longtail.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/wos_3d_test.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/wos_3d_mesh_test.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/param_sweep.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/package.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/package_source.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/edit_cache.dir

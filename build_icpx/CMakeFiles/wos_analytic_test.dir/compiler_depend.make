@@ -289,6 +289,7 @@ CMakeFiles/wos_analytic_test.dir/sycl/wos_analytic_test.cpp.o: /home/powerzhang/
   /home/powerzhang/zombie/sycl/greens_function_device.h \
   /home/powerzhang/zombie/sycl/pcg32_device.h \
   /home/powerzhang/zombie/sycl/phase_policy.h \
+  /home/powerzhang/zombie/sycl/precision_ops.h \
   /home/powerzhang/zombie/sycl/task_init.h \
   /home/powerzhang/zombie/sycl/task_runtime.h \
   /home/powerzhang/zombie/sycl/walkstate_bridge.h \
@@ -2300,6 +2301,8 @@ CMakeFiles/wos_analytic_test.dir/sycl/wos_analytic_test.cpp.o: /home/powerzhang/
 
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Core/ArrayBase.h:
 
+/home/powerzhang/zombie/sycl/precision_ops.h:
+
 /home/powerzhang/zombie/include/zombie/point_estimation/common.h:
 
 /home/powerzhang/zombie/include/zombie/variance_reduction/domain_samplers.h:
@@ -2824,6 +2827,10 @@ CMakeFiles/wos_analytic_test.dir/sycl/wos_analytic_test.cpp.o: /home/powerzhang/
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/kernel_properties/properties.hpp:
 
+/home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm.hpp:
+
+/home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/backend/level_zero.hpp:
+
 /home/tools/intel/oneapi/compiler/2025.2/lib/clang/21/include/avxifmaintrin.h:
 
 /home/powerzhang/zombie/deps/tbb/include/oneapi/tbb/detail/_mutex_common.h:
@@ -3119,7 +3126,3 @@ CMakeFiles/wos_analytic_test.dir/sycl/wos_analytic_test.cpp.o: /home/powerzhang/
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/stream.hpp:
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/sycl_span.hpp:
-
-/home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/backend/level_zero.hpp:
-
-/home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm.hpp:

@@ -290,6 +290,7 @@ CMakeFiles/wos_sycl_dg.dir/sycl/wos_sycl_dg.cpp.o: /home/powerzhang/zombie/sycl/
   /home/powerzhang/zombie/sycl/mesh_loader.h \
   /home/powerzhang/zombie/sycl/pcg32_device.h \
   /home/powerzhang/zombie/sycl/phase_policy.h \
+  /home/powerzhang/zombie/sycl/precision_ops.h \
   /home/powerzhang/zombie/sycl/statistics.h \
   /home/powerzhang/zombie/sycl/task_init.h \
   /home/powerzhang/zombie/sycl/task_queue.h \
@@ -2330,6 +2331,8 @@ CMakeFiles/wos_sycl_dg.dir/sycl/wos_sycl_dg.cpp.o: /home/powerzhang/zombie/sycl/
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/info/ext_codeplay_device_traits.def:
 
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Core/ArrayBase.h:
+
+/home/powerzhang/zombie/sycl/precision_ops.h:
 
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Householder/Householder.h:
 

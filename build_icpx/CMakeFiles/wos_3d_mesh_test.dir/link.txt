@@ -1,0 +1,1 @@
+/home/tools/intel/oneapi/compiler/2025.2/bin/icpx -O3 -DNDEBUG -fsycl -fsycl-targets=nvptx64-nvidia-cuda CMakeFiles/wos_3d_mesh_test.dir/sycl/wos_3d_mesh_test.cpp.o -o wos_3d_mesh_test  -Wl,-rpath,/home/powerzhang/zombie/build_icpx/intelllvm_2025.2_cxx11_64_release intelllvm_2025.2_cxx11_64_release/libtbb.so.12.18 

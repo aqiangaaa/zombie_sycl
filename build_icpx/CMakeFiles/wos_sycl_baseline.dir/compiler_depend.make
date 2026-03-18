@@ -290,6 +290,7 @@ CMakeFiles/wos_sycl_baseline.dir/sycl/wos_sycl_baseline.cpp.o: /home/powerzhang/
   /home/powerzhang/zombie/sycl/mesh_loader.h \
   /home/powerzhang/zombie/sycl/pcg32_device.h \
   /home/powerzhang/zombie/sycl/phase_policy.h \
+  /home/powerzhang/zombie/sycl/precision_ops.h \
   /home/powerzhang/zombie/sycl/statistics.h \
   /home/powerzhang/zombie/sycl/task_init.h \
   /home/powerzhang/zombie/sycl/task_runtime.h \
@@ -1688,6 +1689,10 @@ CMakeFiles/wos_sycl_baseline.dir/sycl/wos_sycl_baseline.cpp.o: /home/powerzhang/
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/sycl_span.hpp:
 
+/usr/include/c++/13/bits/stl_algobase.h:
+
+/home/tools/intel/oneapi/compiler/2025.2/include/sycl/sycl.hpp:
+
 /usr/include/c++/13/future:
 
 /home/powerzhang/zombie/include/zombie/point_estimation/reverse_walk_on_stars.h:
@@ -2322,6 +2327,8 @@ CMakeFiles/wos_sycl_baseline.dir/sycl/wos_sycl_baseline.cpp.o: /home/powerzhang/
 
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Core/ArrayBase.h:
 
+/home/powerzhang/zombie/sycl/precision_ops.h:
+
 /home/powerzhang/zombie/include/zombie/point_estimation/common.h:
 
 /home/powerzhang/zombie/include/zombie/variance_reduction/domain_samplers.h:
@@ -2855,10 +2862,6 @@ CMakeFiles/wos_sycl_baseline.dir/sycl/wos_sycl_baseline.cpp.o: /home/powerzhang/
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/bindless_images_descriptor.hpp:
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/bindless_images_interop.hpp:
-
-/usr/include/c++/13/bits/stl_algobase.h:
-
-/home/tools/intel/oneapi/compiler/2025.2/include/sycl/sycl.hpp:
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/bindless_images_sampler.hpp:
 

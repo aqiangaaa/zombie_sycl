@@ -291,6 +291,7 @@ CMakeFiles/wos_multipoint_test.dir/sycl/wos_multipoint_test.cpp.o
  /home/powerzhang/zombie/sycl/mesh_loader.h
  /home/powerzhang/zombie/sycl/pcg32_device.h
  /home/powerzhang/zombie/sycl/phase_policy.h
+ /home/powerzhang/zombie/sycl/precision_ops.h
  /home/powerzhang/zombie/sycl/task_init.h
  /home/powerzhang/zombie/sycl/task_runtime.h
  /home/powerzhang/zombie/sycl/walkstate_bridge.h
