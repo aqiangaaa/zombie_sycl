@@ -215,6 +215,84 @@ walktask_phased_sycl/fast:
 .PHONY : walktask_phased_sycl/fast
 
 #=============================================================================
+# Target rules for targets named wos_analytic_test
+
+# Build rule for target.
+wos_analytic_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wos_analytic_test
+.PHONY : wos_analytic_test
+
+# fast build rule for target.
+wos_analytic_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_analytic_test.dir/build.make CMakeFiles/wos_analytic_test.dir/build
+.PHONY : wos_analytic_test/fast
+
+#=============================================================================
+# Target rules for targets named wos_multipoint_test
+
+# Build rule for target.
+wos_multipoint_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wos_multipoint_test
+.PHONY : wos_multipoint_test
+
+# fast build rule for target.
+wos_multipoint_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_multipoint_test.dir/build.make CMakeFiles/wos_multipoint_test.dir/build
+.PHONY : wos_multipoint_test/fast
+
+#=============================================================================
+# Target rules for targets named wos_sycl_baseline
+
+# Build rule for target.
+wos_sycl_baseline: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wos_sycl_baseline
+.PHONY : wos_sycl_baseline
+
+# fast build rule for target.
+wos_sycl_baseline/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_baseline.dir/build.make CMakeFiles/wos_sycl_baseline.dir/build
+.PHONY : wos_sycl_baseline/fast
+
+#=============================================================================
+# Target rules for targets named wos_sycl_dg
+
+# Build rule for target.
+wos_sycl_dg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wos_sycl_dg
+.PHONY : wos_sycl_dg
+
+# fast build rule for target.
+wos_sycl_dg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_dg.dir/build.make CMakeFiles/wos_sycl_dg.dir/build
+.PHONY : wos_sycl_dg/fast
+
+#=============================================================================
+# Target rules for targets named wos_sycl_mp
+
+# Build rule for target.
+wos_sycl_mp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wos_sycl_mp
+.PHONY : wos_sycl_mp
+
+# fast build rule for target.
+wos_sycl_mp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_mp.dir/build.make CMakeFiles/wos_sycl_mp.dir/build
+.PHONY : wos_sycl_mp/fast
+
+#=============================================================================
+# Target rules for targets named experiment_runner
+
+# Build rule for target.
+experiment_runner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 experiment_runner
+.PHONY : experiment_runner
+
+# fast build rule for target.
+experiment_runner/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiment_runner.dir/build.make CMakeFiles/experiment_runner.dir/build
+.PHONY : experiment_runner/fast
+
+#=============================================================================
 # Target rules for targets named tbb
 
 # Build rule for target.
@@ -265,6 +343,30 @@ demo: cmake_check_build_system
 demo/fast:
 	$(MAKE) $(MAKESILENT) -f demo/CMakeFiles/demo.dir/build.make demo/CMakeFiles/demo.dir/build
 .PHONY : demo/fast
+
+sycl/experiment_runner.o: sycl/experiment_runner.cpp.o
+.PHONY : sycl/experiment_runner.o
+
+# target to build an object file
+sycl/experiment_runner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiment_runner.dir/build.make CMakeFiles/experiment_runner.dir/sycl/experiment_runner.cpp.o
+.PHONY : sycl/experiment_runner.cpp.o
+
+sycl/experiment_runner.i: sycl/experiment_runner.cpp.i
+.PHONY : sycl/experiment_runner.i
+
+# target to preprocess a source file
+sycl/experiment_runner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiment_runner.dir/build.make CMakeFiles/experiment_runner.dir/sycl/experiment_runner.cpp.i
+.PHONY : sycl/experiment_runner.cpp.i
+
+sycl/experiment_runner.s: sycl/experiment_runner.cpp.s
+.PHONY : sycl/experiment_runner.s
+
+# target to generate assembly for a file
+sycl/experiment_runner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiment_runner.dir/build.make CMakeFiles/experiment_runner.dir/sycl/experiment_runner.cpp.s
+.PHONY : sycl/experiment_runner.cpp.s
 
 sycl/hello_sycl.o: sycl/hello_sycl.cpp.o
 .PHONY : sycl/hello_sycl.o
@@ -386,6 +488,126 @@ sycl/walktask_phased_sycl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walktask_phased_sycl.dir/build.make CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.s
 .PHONY : sycl/walktask_phased_sycl.cpp.s
 
+sycl/wos_analytic_test.o: sycl/wos_analytic_test.cpp.o
+.PHONY : sycl/wos_analytic_test.o
+
+# target to build an object file
+sycl/wos_analytic_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_analytic_test.dir/build.make CMakeFiles/wos_analytic_test.dir/sycl/wos_analytic_test.cpp.o
+.PHONY : sycl/wos_analytic_test.cpp.o
+
+sycl/wos_analytic_test.i: sycl/wos_analytic_test.cpp.i
+.PHONY : sycl/wos_analytic_test.i
+
+# target to preprocess a source file
+sycl/wos_analytic_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_analytic_test.dir/build.make CMakeFiles/wos_analytic_test.dir/sycl/wos_analytic_test.cpp.i
+.PHONY : sycl/wos_analytic_test.cpp.i
+
+sycl/wos_analytic_test.s: sycl/wos_analytic_test.cpp.s
+.PHONY : sycl/wos_analytic_test.s
+
+# target to generate assembly for a file
+sycl/wos_analytic_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_analytic_test.dir/build.make CMakeFiles/wos_analytic_test.dir/sycl/wos_analytic_test.cpp.s
+.PHONY : sycl/wos_analytic_test.cpp.s
+
+sycl/wos_multipoint_test.o: sycl/wos_multipoint_test.cpp.o
+.PHONY : sycl/wos_multipoint_test.o
+
+# target to build an object file
+sycl/wos_multipoint_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_multipoint_test.dir/build.make CMakeFiles/wos_multipoint_test.dir/sycl/wos_multipoint_test.cpp.o
+.PHONY : sycl/wos_multipoint_test.cpp.o
+
+sycl/wos_multipoint_test.i: sycl/wos_multipoint_test.cpp.i
+.PHONY : sycl/wos_multipoint_test.i
+
+# target to preprocess a source file
+sycl/wos_multipoint_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_multipoint_test.dir/build.make CMakeFiles/wos_multipoint_test.dir/sycl/wos_multipoint_test.cpp.i
+.PHONY : sycl/wos_multipoint_test.cpp.i
+
+sycl/wos_multipoint_test.s: sycl/wos_multipoint_test.cpp.s
+.PHONY : sycl/wos_multipoint_test.s
+
+# target to generate assembly for a file
+sycl/wos_multipoint_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_multipoint_test.dir/build.make CMakeFiles/wos_multipoint_test.dir/sycl/wos_multipoint_test.cpp.s
+.PHONY : sycl/wos_multipoint_test.cpp.s
+
+sycl/wos_sycl_baseline.o: sycl/wos_sycl_baseline.cpp.o
+.PHONY : sycl/wos_sycl_baseline.o
+
+# target to build an object file
+sycl/wos_sycl_baseline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_baseline.dir/build.make CMakeFiles/wos_sycl_baseline.dir/sycl/wos_sycl_baseline.cpp.o
+.PHONY : sycl/wos_sycl_baseline.cpp.o
+
+sycl/wos_sycl_baseline.i: sycl/wos_sycl_baseline.cpp.i
+.PHONY : sycl/wos_sycl_baseline.i
+
+# target to preprocess a source file
+sycl/wos_sycl_baseline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_baseline.dir/build.make CMakeFiles/wos_sycl_baseline.dir/sycl/wos_sycl_baseline.cpp.i
+.PHONY : sycl/wos_sycl_baseline.cpp.i
+
+sycl/wos_sycl_baseline.s: sycl/wos_sycl_baseline.cpp.s
+.PHONY : sycl/wos_sycl_baseline.s
+
+# target to generate assembly for a file
+sycl/wos_sycl_baseline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_baseline.dir/build.make CMakeFiles/wos_sycl_baseline.dir/sycl/wos_sycl_baseline.cpp.s
+.PHONY : sycl/wos_sycl_baseline.cpp.s
+
+sycl/wos_sycl_dg.o: sycl/wos_sycl_dg.cpp.o
+.PHONY : sycl/wos_sycl_dg.o
+
+# target to build an object file
+sycl/wos_sycl_dg.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_dg.dir/build.make CMakeFiles/wos_sycl_dg.dir/sycl/wos_sycl_dg.cpp.o
+.PHONY : sycl/wos_sycl_dg.cpp.o
+
+sycl/wos_sycl_dg.i: sycl/wos_sycl_dg.cpp.i
+.PHONY : sycl/wos_sycl_dg.i
+
+# target to preprocess a source file
+sycl/wos_sycl_dg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_dg.dir/build.make CMakeFiles/wos_sycl_dg.dir/sycl/wos_sycl_dg.cpp.i
+.PHONY : sycl/wos_sycl_dg.cpp.i
+
+sycl/wos_sycl_dg.s: sycl/wos_sycl_dg.cpp.s
+.PHONY : sycl/wos_sycl_dg.s
+
+# target to generate assembly for a file
+sycl/wos_sycl_dg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_dg.dir/build.make CMakeFiles/wos_sycl_dg.dir/sycl/wos_sycl_dg.cpp.s
+.PHONY : sycl/wos_sycl_dg.cpp.s
+
+sycl/wos_sycl_mp.o: sycl/wos_sycl_mp.cpp.o
+.PHONY : sycl/wos_sycl_mp.o
+
+# target to build an object file
+sycl/wos_sycl_mp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_mp.dir/build.make CMakeFiles/wos_sycl_mp.dir/sycl/wos_sycl_mp.cpp.o
+.PHONY : sycl/wos_sycl_mp.cpp.o
+
+sycl/wos_sycl_mp.i: sycl/wos_sycl_mp.cpp.i
+.PHONY : sycl/wos_sycl_mp.i
+
+# target to preprocess a source file
+sycl/wos_sycl_mp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_mp.dir/build.make CMakeFiles/wos_sycl_mp.dir/sycl/wos_sycl_mp.cpp.i
+.PHONY : sycl/wos_sycl_mp.cpp.i
+
+sycl/wos_sycl_mp.s: sycl/wos_sycl_mp.cpp.s
+.PHONY : sycl/wos_sycl_mp.s
+
+# target to generate assembly for a file
+sycl/wos_sycl_mp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wos_sycl_mp.dir/build.make CMakeFiles/wos_sycl_mp.dir/sycl/wos_sycl_mp.cpp.s
+.PHONY : sycl/wos_sycl_mp.cpp.s
+
 sycl/zombie_sycl_smoke.o: sycl/zombie_sycl_smoke.cpp.o
 .PHONY : sycl/zombie_sycl_smoke.o
 
@@ -421,6 +643,7 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... demo"
+	@echo "... experiment_runner"
 	@echo "... hello_sycl"
 	@echo "... tbb"
 	@echo "... tbbmalloc"
@@ -429,7 +652,15 @@ help:
 	@echo "... walkstate_lite_sycl"
 	@echo "... walktask_lite_sycl"
 	@echo "... walktask_phased_sycl"
+	@echo "... wos_analytic_test"
+	@echo "... wos_multipoint_test"
+	@echo "... wos_sycl_baseline"
+	@echo "... wos_sycl_dg"
+	@echo "... wos_sycl_mp"
 	@echo "... zombie_sycl_smoke"
+	@echo "... sycl/experiment_runner.o"
+	@echo "... sycl/experiment_runner.i"
+	@echo "... sycl/experiment_runner.s"
 	@echo "... sycl/hello_sycl.o"
 	@echo "... sycl/hello_sycl.i"
 	@echo "... sycl/hello_sycl.s"
@@ -445,6 +676,21 @@ help:
 	@echo "... sycl/walktask_phased_sycl.o"
 	@echo "... sycl/walktask_phased_sycl.i"
 	@echo "... sycl/walktask_phased_sycl.s"
+	@echo "... sycl/wos_analytic_test.o"
+	@echo "... sycl/wos_analytic_test.i"
+	@echo "... sycl/wos_analytic_test.s"
+	@echo "... sycl/wos_multipoint_test.o"
+	@echo "... sycl/wos_multipoint_test.i"
+	@echo "... sycl/wos_multipoint_test.s"
+	@echo "... sycl/wos_sycl_baseline.o"
+	@echo "... sycl/wos_sycl_baseline.i"
+	@echo "... sycl/wos_sycl_baseline.s"
+	@echo "... sycl/wos_sycl_dg.o"
+	@echo "... sycl/wos_sycl_dg.i"
+	@echo "... sycl/wos_sycl_dg.s"
+	@echo "... sycl/wos_sycl_mp.o"
+	@echo "... sycl/wos_sycl_mp.i"
+	@echo "... sycl/wos_sycl_mp.s"
 	@echo "... sycl/zombie_sycl_smoke.o"
 	@echo "... sycl/zombie_sycl_smoke.i"
 	@echo "... sycl/zombie_sycl_smoke.s"

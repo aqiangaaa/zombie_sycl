@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/powerzhang/zombie/include -I/home/powerzhang/zombie/deps/pcg32 -I/home/powerzhang/zombie/deps/tbb/include -I/home/powerzhang/zombie/deps/nanoflann/include -I/home/powerzhang/zombie/deps/fcpw/deps/eigen -I/home/powerzhang/zombie/deps/fcpw/include -I/home/powerzhang/zombie/deps/tbb/src/tbb/../../include
 
-CXX_FLAGS = -O3 -DNDEBUG -fsycl
+CXX_FLAGS = -O3 -DNDEBUG -fsycl -fsycl-targets=nvptx64-nvidia-cuda
 

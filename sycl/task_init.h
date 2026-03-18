@@ -21,16 +21,16 @@
 // ============================================================
 struct TaskInitConfig {
     // 初始位置：第 i 条状态会在这个 base 上做偏移
-    std::array<float, 2> basePt = {0.0f, 100.0f};
+    float basePt[MAX_DIM] = {0.0f, 100.0f, 0.0f};
 
-    // 每条状态在 x/y 上的增量
-    std::array<float, 2> ptStride = {1.0f, 1.0f};
+    // 每条状态在各维度上的增量
+    float ptStride[MAX_DIM] = {1.0f, 1.0f, 0.0f};
 
     // 初始法向
-    std::array<float, 2> currentNormal = {0.0f, 1.0f};
+    float currentNormal[MAX_DIM] = {0.0f, 1.0f, 0.0f};
 
     // 初始前一步方向
-    std::array<float, 2> prevDirection = {1.0f, 0.0f};
+    float prevDirection[MAX_DIM] = {1.0f, 0.0f, 0.0f};
 
     // 初始距离 / 权重 / 步数 / 边界状态
     float prevDistance = 0.5f;
@@ -76,14 +76,11 @@ make_initial_host_walkstates(int B, const TaskInitConfig& cfg) {
     std::vector<zombie::WalkState<Real, DIM>> hostStates(B);
 
     for (int i = 0; i < B; ++i) {
-        hostStates[i].currentPt[0] = cfg.basePt[0] + i * cfg.ptStride[0];
-        hostStates[i].currentPt[1] = cfg.basePt[1] + i * cfg.ptStride[1];
-
-        hostStates[i].currentNormal[0] = cfg.currentNormal[0];
-        hostStates[i].currentNormal[1] = cfg.currentNormal[1];
-
-        hostStates[i].prevDirection[0] = cfg.prevDirection[0];
-        hostStates[i].prevDirection[1] = cfg.prevDirection[1];
+        for (int d = 0; d < DIM; ++d) {
+            hostStates[i].currentPt[d] = cfg.basePt[d] + i * cfg.ptStride[d];
+            hostStates[i].currentNormal[d] = cfg.currentNormal[d];
+            hostStates[i].prevDirection[d] = cfg.prevDirection[d];
+        }
 
         hostStates[i].prevDistance = cfg.prevDistance;
         hostStates[i].throughput = cfg.throughput;
@@ -103,6 +100,9 @@ make_initial_walktask_states(const std::vector<zombie::WalkState<Real, DIM>>& ho
 
     for (size_t i = 0; i < hostStates.size(); ++i) {
         walkTaskStates[i] = packState(hostStates[i]);
+        walkTaskStates[i].rng = pcg32_seed(
+            0x9E3779B97F4A7C15ull + static_cast<std::uint64_t>(i + 1),
+            static_cast<std::uint64_t>(i * 2 + 1));
     }
 
     return walkTaskStates;
@@ -125,6 +125,9 @@ make_initial_walktask_states(
 
     for (size_t i = 0; i < hostStates.size(); ++i) {
         walkTaskStates[i] = packState(hostStates[i]);
+        walkTaskStates[i].rng = pcg32_seed(
+            0x9E3779B97F4A7C15ull + static_cast<std::uint64_t>(i + 1),
+            static_cast<std::uint64_t>(i * 2 + 1));
 
         // 用真实 SamplePoint 里的两类边界距离覆盖占位值
         walkTaskStates[i].distToAbsorbingBoundary = samplePoints[i].distToAbsorbingBoundary;
@@ -134,17 +137,22 @@ make_initial_walktask_states(
         for (int d = 0; d < int(DIM); ++d) {
             walkTaskStates[i].normal[d] = samplePoints[i].normal[d];
         }
+        for (int d = 0; d < int(DIM); ++d) {
+            walkTaskStates[i].currentNormal[d] = samplePoints[i].normal[d];
+        }
 
         // geometryDistance 当前继续取两者较小值，作为最小可运行版
         walkTaskStates[i].geometryDistance =
             std::min(samplePoints[i].distToAbsorbingBoundary,
                      samplePoints[i].distToReflectingBoundary);
-        // 主机侧预处理后的“问题定义层”数值
-        walkTaskStates[i].sourceValue = 0.1f;
-
-        walkTaskStates[i].hasReflectingBoundary =
-            (samplePoints[i].distToReflectingBoundary <=
-            samplePoints[i].distToAbsorbingBoundary) ? 1 : 0;
+        // 这里只保留几何/边界距离初始化；
+        // 问题定义层数值（sourceValue / hasReflectingBoundary / robinValue / robinCoeffValue）
+        // 统一交给 apply_host_pde_fields(...) 在 host 侧真实 PDE 回调中填写。
+        walkTaskStates[i].sourceValue = 0.0f;
+        walkTaskStates[i].hasReflectingBoundary = 0;
+        walkTaskStates[i].robinValue = 0.0f;
+        walkTaskStates[i].robinCoeffValue = 0.0f;
+        walkTaskStates[i].dirichletValue = 0.0f;
     }
 
     return walkTaskStates;
@@ -182,8 +190,8 @@ make_initial_host_walkstates_from_sample_points(
         hostStates[i].currentNormal = sp.normal;
 
         // 当前先给一个固定前向方向，后面再逐步替换成更真实的初始化策略
+        hostStates[i].prevDirection = zombie::Vector<DIM>::Zero();
         hostStates[i].prevDirection[0] = 1.0f;
-        hostStates[i].prevDirection[1] = 0.0f;
 
         // 用两类边界距离中的较小值，作为一个最小可运行版的初始距离
         hostStates[i].prevDistance =
@@ -254,6 +262,13 @@ inline void apply_host_pde_fields(
                 pde.robinCoeff(x, n, s.hasReflectingBoundary != 0);
         } else {
             s.robinCoeffValue = 0.0f;
+        }
+
+        // ---------------- dirichletValue ----------------
+        if (pde.dirichlet) {
+            s.dirichletValue = pde.dirichlet(x, false);
+        } else {
+            s.dirichletValue = 0.0f;
         }
     }
 }

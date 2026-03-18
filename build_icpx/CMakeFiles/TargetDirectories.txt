@@ -4,6 +4,12 @@
 /home/powerzhang/zombie/build_icpx/CMakeFiles/walkstate_bridge_sycl.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/walktask_lite_sycl.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/walktask_phased_sycl.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/wos_analytic_test.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/wos_multipoint_test.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/wos_sycl_baseline.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/wos_sycl_dg.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/wos_sycl_mp.dir
+/home/powerzhang/zombie/build_icpx/CMakeFiles/experiment_runner.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/package.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/package_source.dir
 /home/powerzhang/zombie/build_icpx/CMakeFiles/edit_cache.dir

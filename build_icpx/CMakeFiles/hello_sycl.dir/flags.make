@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -O3 -DNDEBUG -fsycl
+CXX_FLAGS = -O3 -DNDEBUG -fsycl -fsycl-targets=nvptx64-nvidia-cuda
 

@@ -286,6 +286,8 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o
  /home/powerzhang/zombie/include/zombie/variance_reduction/kelvin_transform.h
  /home/powerzhang/zombie/include/zombie/variance_reduction/reverse_walk_solver.h
  /home/powerzhang/zombie/include/zombie/zombie.h
+ /home/powerzhang/zombie/sycl/greens_function_device.h
+ /home/powerzhang/zombie/sycl/pcg32_device.h
  /home/powerzhang/zombie/sycl/phase_policy.h
  /home/powerzhang/zombie/sycl/task_init.h
  /home/powerzhang/zombie/sycl/task_runtime.h

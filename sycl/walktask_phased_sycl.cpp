@@ -105,6 +105,12 @@ int main() {
             return 0.1f;
         };
 
+        pde.dirichlet = [](const zombie::Vector<DIM>& x, bool normalAligned) -> float {
+            (void)normalAligned;
+            // 先给一个最小可运行边界值
+            return 1.0f + 0.01f * x[0];
+        };
+
         // 最小“反射边界判定”：
         // 先用 x[0] < 4.0f 作为占位规则。
         // 后面可以替换成更贴近真实几何/边界定义的版本。
@@ -131,7 +137,7 @@ int main() {
 
         // false: 只打印最后的紧凑摘要表
         // true : 每个 case 打印完整详细日志
-        bool verbosePerCase = false;
+        bool verbosePerCase = true;
         std::vector<SweepSummary> sweepSummaries;
 
         // 当前默认配置
@@ -140,9 +146,9 @@ int main() {
         expCfg.B_max = 16;
 
         expCfg.firstLaunchSteps = 3;
-        expCfg.secondLaunchSteps = 2;
+        expCfg.secondLaunchSteps = 1;
 
-        expCfg.recycleThreshold = 4;
+        expCfg.recycleThreshold = 8;
         expCfg.useSamplePointInit = true;
 
         expCfg.walkSettings = zombie::WalkSettings(1e-3f, 1e-3f, 2, false);
@@ -199,11 +205,11 @@ int main() {
                     float distR = 0.5f;
 
                     if (i < expCfg.B / 2) {
-                        // 前半部分：更接近反射边界
+                        // 前半部分：离吸收边界更远
                         distA = 0.8f;
                         distR = 0.3f;
                     } else {
-                        // 后半部分：更接近吸收边界
+                        // 后半部分：离吸收边界更近
                         distA = 0.3f;
                         distR = 0.8f;
                     }
@@ -306,9 +312,15 @@ int main() {
                           << std::endl;
 
                 std::cout << "taskTotals: "
-                          << "source=" << stats.totalSourceContribution << ", "
-                          << "reflectContrib=" << stats.totalReflectingBoundaryContribution
-                          << std::endl;
+                        << "source=" << stats.totalSourceContribution << ", "
+                        << "terminal=" << stats.totalTerminalContribution << ", "
+                        << "reflectContrib=" << stats.totalReflectingBoundaryContribution
+                        << std::endl;
+                
+                std::cout << "completionCounts: "
+                        << "maxLength=" << stats.terminatedByMaxLengthCount << ", "
+                        << "positionRule=" << stats.terminatedByPositionRuleCount
+                        << std::endl;
 
                 std::cout << "taskAverages: "
                           << "throughput=" << stats.avgThroughput << ", "
@@ -396,9 +408,15 @@ int main() {
                               << std::endl;
 
                     std::cout << "[repacked] taskTotals: "
-                              << "source=" << repackedStats.totalSourceContribution << ", "
-                              << "reflectContrib=" << repackedStats.totalReflectingBoundaryContribution
-                              << std::endl;
+                            << "source=" << repackedStats.totalSourceContribution << ", "
+                            << "terminal=" << repackedStats.totalTerminalContribution << ", "
+                            << "reflectContrib=" << repackedStats.totalReflectingBoundaryContribution
+                            << std::endl;
+
+                    std::cout << "[repacked] completionCounts: "
+                            << "maxLength=" << repackedStats.terminatedByMaxLengthCount << ", "
+                            << "positionRule=" << repackedStats.terminatedByPositionRuleCount
+                            << std::endl;
 
                     std::cout << "[repacked] taskAverages: "
                               << "throughput=" << repackedStats.avgThroughput << ", "
@@ -478,6 +496,7 @@ int main() {
                 << ", tailFraction=" << s.tailFraction
                 << ", nextB=" << s.suggestedNextGranularity
                 << ", repacked=" << (s.hasRepacked ? 1 : 0);
+            
 
             if (s.hasRepacked) {
                 std::cout
@@ -488,6 +507,10 @@ int main() {
             std::cout
                 << ", history=" << s.granularityHistory
                 << std::endl;
+            
+            if (verbosePerCase) {
+                std::cout << "----------------------------------------" << std::endl;
+            }
         }
 
     } catch (const std::exception& e) {

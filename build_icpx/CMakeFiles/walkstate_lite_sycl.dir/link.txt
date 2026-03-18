@@ -1,1 +1,1 @@
-/home/tools/intel/oneapi/compiler/2025.2/bin/icpx -O3 -DNDEBUG -fsycl CMakeFiles/walkstate_lite_sycl.dir/sycl/walkstate_lite_sycl.cpp.o -o walkstate_lite_sycl 
+/home/tools/intel/oneapi/compiler/2025.2/bin/icpx -O3 -DNDEBUG -fsycl -fsycl-targets=nvptx64-nvidia-cuda CMakeFiles/walkstate_lite_sycl.dir/sycl/walkstate_lite_sycl.cpp.o -o walkstate_lite_sycl 

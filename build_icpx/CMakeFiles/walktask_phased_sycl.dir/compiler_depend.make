@@ -285,6 +285,8 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
   /home/powerzhang/zombie/include/zombie/variance_reduction/kelvin_transform.h \
   /home/powerzhang/zombie/include/zombie/variance_reduction/reverse_walk_solver.h \
   /home/powerzhang/zombie/include/zombie/zombie.h \
+  /home/powerzhang/zombie/sycl/greens_function_device.h \
+  /home/powerzhang/zombie/sycl/pcg32_device.h \
   /home/powerzhang/zombie/sycl/phase_policy.h \
   /home/powerzhang/zombie/sycl/task_init.h \
   /home/powerzhang/zombie/sycl/task_runtime.h \
@@ -1679,6 +1681,8 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/vector.hpp:
 
+/home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm/usm_pointer_info.hpp:
+
 /usr/include/c++/13/future:
 
 /home/powerzhang/zombie/include/zombie/point_estimation/reverse_walk_on_stars.h:
@@ -2197,6 +2201,8 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/QR/HouseholderQR.h:
 
+/home/powerzhang/zombie/sycl/pcg32_device.h:
+
 /usr/include/c++/13/mutex:
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/weak_object_base.hpp:
@@ -2477,6 +2483,16 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 
 /home/powerzhang/zombie/include/zombie/point_estimation/walk_on_spheres.h:
 
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm/usm_enums.hpp:
+
+/home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/QR/InternalHeaderCheck.h:
+
+/home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Core/CwiseNullaryOp.h:
+
+/home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/experimental/detail/properties/graph_properties.def:
+
 /home/powerzhang/zombie/include/zombie/point_estimation/walk_on_stars.h:
 
 /usr/include/c++/13/pstl/pstl_config.h:
@@ -2533,6 +2549,8 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 
 /home/powerzhang/zombie/include/zombie/zombie.h:
 
+/home/tools/intel/oneapi/compiler/2025.2/include/sycl/platform.hpp:
+
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Core/PermutationMatrix.h:
 
 /home/powerzhang/zombie/sycl/phase_policy.h:
@@ -2581,16 +2599,6 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/detail/builtins/native_math_functions.inc:
 
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/QR/InternalHeaderCheck.h:
-
-/home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/Core/CwiseNullaryOp.h:
-
-/home/tools/intel/oneapi/compiler/2025.2/include/sycl/ext/oneapi/experimental/detail/properties/graph_properties.def:
-
-/home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm/usm_enums.hpp:
-
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/accessor.hpp:
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/info/device_traits_2020_deprecated.def:
@@ -2610,6 +2618,8 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/c++/13/bits/predefined_ops.h:
+
+/home/powerzhang/zombie/sycl/greens_function_device.h:
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/backend_types.hpp:
 
@@ -3043,8 +3053,6 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/nd_range.hpp:
 
-/home/tools/intel/oneapi/compiler/2025.2/include/sycl/platform.hpp:
-
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/pointers.hpp:
 
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.inc:
@@ -3112,5 +3120,3 @@ CMakeFiles/walktask_phased_sycl.dir/sycl/walktask_phased_sycl.cpp.o: /home/power
 /home/powerzhang/zombie/deps/fcpw/deps/eigen/Eigen/src/misc/Image.h:
 
 /home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm/usm_allocator.hpp:
-
-/home/tools/intel/oneapi/compiler/2025.2/include/sycl/usm/usm_pointer_info.hpp:
